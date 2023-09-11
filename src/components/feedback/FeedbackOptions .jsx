@@ -5,7 +5,12 @@ import { nanoid } from 'nanoid';
 export const FeedbackOptions = ({ incrementAdd, state }) => {
   const preArray = Object.keys(state);
   const array = preArray.map(el => (
-    <button type="button" key={nanoid()} onClick={() => incrementAdd(el)}>
+    <button
+      className="w-20 mx-1 border-solid border border-indigo-600 hover:border-dotted border-amber-800 rounded-md"
+      type="button"
+      key={nanoid()}
+      onClick={() => incrementAdd(el)}
+    >
       {el}
     </button>
   ));
