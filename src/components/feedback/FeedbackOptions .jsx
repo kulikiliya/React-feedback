@@ -26,4 +26,5 @@ FeedbackOptions.propTypes = {
       bad: PropTypes.number,
     })
   ),
+  incrementAdd: PropTypes.func,
 };

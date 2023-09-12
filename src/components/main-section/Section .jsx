@@ -8,3 +8,7 @@ export const Section = ({ children }) => {
     </div>
   );
 };
+
+Section.propTypes = {
+  children: PropTypes.node,
+};
