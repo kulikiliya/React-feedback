@@ -19,7 +19,7 @@ export const FeedbackOptions = ({ incrementAdd, state }) => {
 };
 
 FeedbackOptions.propTypes = {
-  state: PropTypes.arrayOf(
+  state: PropTypes.objectOf(
     PropTypes.shape({
       good: PropTypes.number,
       neutral: PropTypes.number,
